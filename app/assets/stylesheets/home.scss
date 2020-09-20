@@ -1,0 +1,44 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$main:#5ccec4 !important;
+//$secondary: #8ae7dc !important;
+//$lighto:#ffe0ca !important;
+//$brighto: #ffb888 !important;
+//$white:#fff !important;
+//$dark:#333 !important;
+
+body{
+	// background-color: aqua !important
+	font-family: 'Poppins' !important;
+}
+
+.page {
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: auto;
+    border: 1px solid gray;
+    scroll-snap-type: y mandatory;
+    &.proximity {
+			scroll-snap-type: y proximity;
+    }
+}
+
+
+.section {
+    border-bottom: 1px solid white;
+    padding: 3rem;
+    font-size: 1.4rem;
+    color: rgba(white, .5);
+    background: $main;
+    text-align: center;
+    scroll-snap-align: start;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.section:nth-child(even) {
+background-color:white !important;
+}
